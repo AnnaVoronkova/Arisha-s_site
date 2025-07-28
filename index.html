@@ -4,24 +4,78 @@
 <meta charset="UTF-8">
 <title>Пример базовой структуры HTML</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<link rel="stylesheet" href="css/styles.css"
+<link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-<nav>
-    <a href="#" class="logo">Картинка</a>
+<header>
+    <nav>
+        <img src="1.jpg" height="100">
 
-    <div class="links">
-        <a href="#">Пробный урок</a>
-        <a href="#">О нас</a>
-        <a href="#">Направления</a>
-        <a href="#">Галлерея</a>
-        <a href="#">Прайс</a>
-        <a href="#">Отзывы</a>
+        <div class="links">
+            <a href="#">Пробный урок</a>
+            <a href="#">О нас</a>
+            <a href="#">Направления</a>
+            <a href="#">Галлерея</a>
+            <a href="#">Прайс</a>
+            <a href="#">Отзывы</a>
+        </div>
+
+        <button class="btn">Записаться</button>
+    </nav>
+</header>
+
+<section>
+    <div class="language-school-banner">
+        <div class="chinese-slogan">活到老，学到老 — LIVE AND LEARN</div>
+        
+        <div class="initials-section">
+            <div class="initials-row">BEK ЖИВИ —</div>
+            <div class="initials-row">BEK УЧИСЬ</div>
+        </div>
+        
+        <div class="school-name">
+            <div class="russian-name">Школа иностранных языков</div>
+            <div class="russian-name">Panda Speaking Club</div>
+        </div>
     </div>
+</section>
 
-    <button class="btn">Login</button>
-</nav>
+<section>
+    <div class="trial-lesson-container">
+    <div class="white">
+        <h1>ЗАПИШИТЕСЬ</h1>
+        <h1>НА ПРОБНЫЙ УРОК</h1>
+        
+        <div class="highlight-box">
+            <p>Он абсолютно бесплатный!</p>
+            <p>Преподаватель расскажет о себе<br>и с радостью познакомится с учеником.</p>
+        </div>
+    </div>
+    <div class="divider"></div>
+    
+    <form class="signup-form framed-form">
+    <div class="form-row">
+        <div class="form-group">
+        <input type="text" placeholder="Имя" class="framed-input">
+        </div>
+        
+        <div class="form-group">
+        <input type="tel" placeholder="Телефон" class="framed-input">
+        </div>
+        
+        <div class="form-group">
+        <input type="email" placeholder="Email" class="framed-input">
+        </div>
+        
+        <div class="form-submit">
+        <button type="submit" class="submit-btn">Отправить</button>
+        </div>
+    </div>
+    </form>
+    </div>
+</section>
+
 <script src="js/list.min.js"></script>
 <script src="js/sweetalert2.all.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
