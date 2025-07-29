@@ -1,11 +1,19 @@
 
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
 
 body{
     background-color: #fce9dc;
+    background-image: "Group.jpg";
+    font-family: 'Montserrat', sans-serif;
 }
 
 header{
-    position: relative; /* или fixed/sticky если нужно */
+    position: sticky; /* или fixed/sticky если нужно */
     z-index: 1000; /* гарантирует что навигация поверх других элементов */
     width: 100%;
 }
@@ -32,6 +40,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
 
 nav .logo{
@@ -82,30 +91,6 @@ nav .links a:hover:before{
     transform: scale(1.1);
 }
 
-@media (max-width: 1100px){
-    nav{
-        padding: 4%;
-    }
-
-    nav .links a{
-        margin-left:15px;
-    }
-}
-
-@media (max-width: 990px){
-    nav .links{
-        position:absolute;
-        top:100%;
-        left:0;
-        right: 0;
-        padding: 0 4%;
-    }
-
-    nav .links a{
-        display: block;
-        margin: 10px 0;
-    }
-}
 
 
 .language-school-banner {
@@ -165,7 +150,6 @@ nav .links a:hover:before{
   padding-left: 70px;
   padding-right: 70px;
   padding-bottom: 40px;
-  font-family: Arial, sans-serif;
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -237,3 +221,101 @@ nav .links a:hover:before{
   cursor: pointer;
   white-space: nowrap; /* Текст не переносится */
 }
+
+
+
+
+
+
+.text-with-image {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 1200px;
+  width: 750px;
+  margin: auto;
+  padding: 20px;
+}
+
+.right-image{
+    height: 300px;
+}
+
+.left-image{
+    height: 300px;
+}
+
+.text-content{
+    font-size: 16px;
+    text-transform: uppercase;
+    color:#754929;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1100px){
+    nav{
+        padding: 4%;
+    }
+
+    nav .links a{
+        margin-left:15px;
+    }
+}
+
+@media (max-width: 990px){
+    nav .links{
+        position:absolute;
+        top:100%;
+        left:0;
+        right: 0;
+        padding: 0 4%;
+        height:0;
+        overflow: hidden;
+    }
+
+    nav .links a{
+        display: block;
+        margin: 10px 0;
+        text-align:center;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        transition:0.5s;
+    }
+
+    nav .links a::before{
+        background: none;
+    }
+
+    nav .links a:hover{
+        background-color: #E7510E;
+    }
+
+    .text-with-image {
+        display: grid; 
+        place-items: center;
+        text-align: center;
+        align-items: center;
+        gap: 40px;
+        width: 600px;
+        margin: auto;
+        padding: 20px;
+    }
+
+    .right-image{
+        height: 300px;
+    }
+}
+
+
+
