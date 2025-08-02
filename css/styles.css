@@ -496,6 +496,39 @@ nav .menu-btn {
 }
 
 
+@media screen and (max-width: 768px) {
+  nav .logo{
+    font-size: 42px;
+    font-weight: 600;
+    color: #ff660d;
+}
+nav .links a{
+    position: relative;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-left: 20px;
+    color: #754929;
+}
+
+nav .menu-btn {
+    font-size: 32px;
+    cursor: pointer;
+    display: none;
+}
+
+.btn{
+    background-color: #ff660d;
+    
+    color: azure;
+    border:none;
+    font-size:22px;
+    font-weight: 400;
+    border-radius: 10px;
+    cursor:pointer;
+    transition:0.5s;
+}
+}
 
 
 
