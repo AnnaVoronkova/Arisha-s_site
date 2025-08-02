@@ -654,11 +654,10 @@ nav .menu-btn {
 
 }
 
-@media (width < 700){
+@media (max-width: 800px){
   nav .menu-btn {
-    font-size: 65px;
+    font-size: 35px;
     cursor: pointer;
-    display: none;
 }
 
 }
