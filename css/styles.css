@@ -471,6 +471,31 @@ nav .menu-btn {
 
 
 
+/* Ноутбуки (меньше 1200px) */
+@media (max-width: 1199.98px) { 
+
+}
+
+/* Планшеты (меньше 992px) */
+@media (max-width: 991.98px) { 
+
+}
+
+/* Большие телефоны (меньше 768px) */
+@media (max-width: 768px) { 
+  nav .menu-btn {
+    font-size: 35px;
+    cursor: pointer;
+}
+
+body{
+  background-color: #8bc34a;
+}
+
+}
+
+/* Малые телефоны (меньше 576px) */
+@media (max-width: 575.98px) {}
 
 
 
@@ -652,17 +677,3 @@ nav .menu-btn {
 
 
 }
-
-@media (max-width: 500px){
-  nav .menu-btn {
-    font-size: 35px;
-    cursor: pointer;
-}
-
-body{
-  background-color: #8bc34a;
-}
-
-}
-
-
