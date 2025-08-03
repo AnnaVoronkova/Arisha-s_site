@@ -1,0 +1,798 @@
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+
+body{
+    background-color: #fff5ed;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    position: sticky; /* или fixed/sticky если нужно */
+    top:0;
+    left: 0;
+    z-index: 1000; /* гарантирует что навигация поверх других элементов */
+    width: 100%;
+    background-color: #fff5ed;
+}
+
+a{
+    text-decoration: none;
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+img{
+    text-decoration: none;
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+nav{
+    top: 0;
+    left:0;
+    right:0;
+    padding: 10px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+nav .logo{
+    font-weight: 600;
+    color: #ff660d;
+}
+
+.photo_logo{
+  height: 100px;
+}
+
+nav .links a{
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-left: 20px;
+    color: #754929;
+}
+
+nav .links a:before{
+    position: absolute;
+    content:"";
+    width:100%;
+    height:3px;
+    background-color: #ff660d;
+    left: 0;
+    bottom: -2px;
+    border-radius: 10px;
+    transform: scale(0);
+    transition: 0.5s;
+}
+
+nav .links a:hover:before{
+    transform: scale(1);
+}
+
+
+nav .menu-btn {
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+.btn{
+    background-color: #ff660d;
+    padding: 8px 30px;
+    color: azure;
+    border:none;
+    font-size:16px;
+    font-weight: 400;
+    border-radius: 10px;
+    cursor:pointer;
+    transition:0.5s;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+
+
+
+.language-school-banner {
+    line-height: 1;
+    position: relative;
+    text-align: center;
+    /*font-weight: bold;*/
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.chinese-slogan {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color:#754929;
+}
+
+.initials-section {
+    line-height: 0.9;
+    color:#E7510E;
+    font-size: 56px;
+    letter-spacing: 1px;
+    margin: 1px 0;
+    font-weight: bold;
+}
+
+.initials-row {
+    margin: 1px 0;
+}
+
+.school-name {
+    margin-top: 20px;
+    color:#754929;
+}
+
+.russian-name {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+.white{
+    color: #fff;
+}
+
+.nazvanie{
+  font-size: 20px;
+  font-weight: bold;
+  gap: 5px;
+}
+
+.trial-lesson-container {
+  max-width: 1000px; /* Увеличиваем ширину для горизонтального расположения */
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-bottom: 40px;
+  
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  background-color: #ff660d;
+}
+
+.highlight-box{
+  padding-bottom: 15px;
+}
+
+/* Стили для формы с рамкой */
+.framed-form {
+  border-radius: 8px;
+}
+
+.framed-input {
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  background: white;
+  height: 46px;        /* Фиксированная высота */
+  padding: 4px 10px;   /* Уменьшенные отступы */
+  line-height: 1.2;    /* Плотный межстрочный интервал */
+  box-sizing: border-box;
+}
+
+.framed-input label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.framed-input input {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+.form-row {
+  display: flex;
+  align-items: flex-end; /* Выравниваем по нижнему краю */
+  gap: 15px; /* Расстояние между элементами */
+}
+
+.form-group {
+  flex: 1; /* Равномерно растягиваем поля */
+}
+
+.framed-input {
+  width: 100%;
+  height: 46px;
+  padding: 0 15px;
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  box-sizing: border-box;
+}
+
+.form-submit {
+  flex: 0 0 auto; /* Фиксированная ширина для кнопки */
+  margin-bottom: 3px; /* Микро-корректировка выравнивания */
+}
+
+.submit-btn {
+  height: 46px; /* Такая же высота как у полей */
+  padding: 0 25px;
+  background-color: #754929;
+  color: white;
+  border: none;
+  border-radius: 14px; /* Такой же радиус скругления */
+  font-size: 16px;
+  cursor: pointer;
+  white-space: nowrap; /* Текст не переносится */
+}
+
+
+
+
+
+
+.text-with-image {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: 750px;
+  margin: auto;
+  padding: 20px;
+}
+
+.right-image{
+    height: 300px;
+}
+
+.left-image{
+    height: 300px;
+}
+
+.text-content{
+    font-size: 16px;
+    text-transform: uppercase;
+    color:#754929;
+}
+
+
+
+
+
+
+
+
+.highlighted {
+    background-color: #f15a24;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 60px;
+      font-size: 26px;
+      font-weight: bold;
+      line-height: 1.6;
+    }
+
+    .hand-underline {
+      display: inline-block;
+      position: relative;
+      padding-bottom: 8px;
+    }
+
+    .hand-underline::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 15px;
+      background: url('https://i.imgur.com/Lh60P8V.png') no-repeat center;
+      background-size: contain;
+      pointer-events: none;
+    }
+
+    .strike {
+      text-decoration: line-through;
+    }
+
+    .x-mark {
+      position: relative;
+    }
+
+    .x-mark::after {
+      content: "×";
+      position: absolute;
+      top: -10px;
+      right: -12px;
+      font-size: 20px;
+      color: white;
+    }
+
+
+
+
+
+
+
+    * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.container {
+    font-family: 'Montserrat', sans-serif;
+  background: #fff5ed;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.chinese-name{
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    font-size: 32px;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.na_urokax_mi{
+    font-size: 22px;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+.lii{
+    padding: 10px;
+}
+
+.language-block {
+  flex: 1 1 300px;
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 20px;
+  color: white;
+}
+
+.chinese {
+  background-color: #e6510d;
+}
+
+.english {
+  background-color: #8bc34a;
+}
+
+.language-block h2 {
+  margin-bottom: 16px;
+}
+
+.language-block ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 16px;
+}
+
+
+.language-block .highlight {
+    padding-left: 30px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.language-block button {
+  background-color: white;
+  color: #e6510d;
+  border: none;
+  padding: 12px 24px;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: grid; 
+  place-items: center;
+  transition:0.5s;
+
+}
+
+.language-block button:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.1);
+}
+
+
+
+
+
+/* Основной контейнер с горизонтальным расположением блоков */
+        .main-container {
+            display: flex;
+            flex-direction: row;  /* Блоки идут в строку */
+            gap: 20px;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        /* Общий стиль для всех блоков */
+        .block {
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .empty{
+          width: 500px;
+        }
+
+        .h1{
+          font-size: 42px;
+          font-weight: bold;
+          color:#f15a24;
+        }
+
+        /* Блок с вертикальным расположением фото */
+        .photo-column {
+            display: flex;
+            flex-direction: column;  /* Фото идут в столбик */
+            gap: 15px;
+        }
+
+        .photo {
+            object-fit: cover;
+            border-radius: 10px;
+            width: 550px;
+            border: 1px solid #eee;
+        }
+
+        /* Стили для демонстрации */
+        .text-content2 {
+            padding: 10px;
+            background-color: #e9f5ff;
+            margin-bottom: 15px;
+        }
+
+
+
+/* Ноутбуки (меньше 1200px) */
+@media (max-width: 1200px) { 
+    nav{
+        padding: 4%;
+    }
+
+    nav .links a{
+        margin-left:15px;
+    }
+}
+
+/* Планшеты (меньше 992px) */
+@media (max-width: 992px) { 
+  .container {
+    flex-direction: column;
+    align-items: center;
+    }
+            
+    .language-title {
+        font-size: 1.5rem;
+    }
+            
+    .section-title, .features-list, .highlight {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+            
+    .cta-button {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+.trial-lesson-container {
+  max-width: 1000px; /* Увеличиваем ширину для горизонтального расположения */
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-bottom: 40px;
+  
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  background-color: #ff660d;
+}
+
+
+    nav .links{
+        position:absolute;
+        top:100%;
+        left:0;
+        right: 0;
+        padding: 0 4%;
+        background-color: #fce9dc;
+        height:0;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    nav.active .links{
+        height: 240px;
+    }
+
+    nav .menu-btn{
+        display: block;
+    }
+
+    nav .links a{
+        display: block;
+        margin: 10px 0;
+        text-align:center;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        transition:0.5s;
+    }
+
+    nav .links a::before{
+        background: none;
+    }
+
+    nav .links a:hover{
+        background-color: #E7510E;
+    }
+
+    .text-with-image {
+        display: grid; 
+        place-items: center;
+        text-align: center;
+        align-items: center;
+        gap: 40px;
+        width: 600px;
+        margin: auto;
+        padding: 20px;
+    }
+
+    .right-image{
+        height: 300px;
+    }
+
+    .form-row {
+        display:block;
+        gap: 15px; /* Расстояние между элементами */
+    }
+
+    .form-group {
+        display: grid;
+        margin-bottom: 20px;
+    }
+
+    .form-group input {
+        width: 100%;
+        place-items: center;
+        text-align: center;
+        align-items: center;
+        padding: 10px;
+        border: 1px solid #ddd;
+        font-size: 16px;
+        box-sizing: border-box;
+    }
+
+
+
+        .main-container {
+            display: flex;
+            flex-direction: column;  /* Блоки идут в строку */
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        /* Общий стиль для всех блоков */
+        .block {
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+            width: 80%
+        }
+
+        .empty{
+          width: 500px;
+        }
+
+        .h1{
+          font-size: 42px;
+          font-weight: bold;
+          color:#f15a24;
+        }
+
+        /* Блок с вертикальным расположением фото */
+        .photo-column {
+            display: flex;
+            flex-direction: column;  /* Фото идут в столбик */
+            gap: 15px;
+            align-items: center;
+        }
+
+        .photo {
+            object-fit: cover;
+            border-radius: 10px;
+            width: 80%;
+            border: 1px solid #eee;
+        }
+
+        /* Стили для демонстрации */
+        .text-content2 {
+            padding: 10px;
+            background-color: #e9f5ff;
+            margin-bottom: 15px;
+        }
+
+}
+
+/* Большие телефоны (меньше 768px) */
+@media (max-width: 768px) { 
+
+  nav{
+    top: 0;
+    left:0;
+    right:0;
+    padding: 2px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .photo_logo{
+    height: 50px;
+  }
+
+
+  .chinese-slogan {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color:#754929;
+}
+
+.initials-section {
+    line-height: 0.9;
+    color:#E7510E;
+    font-size: 42px;
+    letter-spacing: 0px;
+    margin: 1px 0;
+    font-weight: bold;
+}
+
+
+.school-name {
+    margin-top: 10px;
+    color:#754929;
+}
+
+.russian-name {
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+
+
+
+
+.nazvanie{
+  font-size: 100px;
+  font-weight: bold;
+  gap: 5px;
+}
+
+.trial-lesson-container {
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  
+  width: 90%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  background-color: #ff660d;
+}
+
+.highlight-box{
+  padding-bottom: 15px;
+}
+
+/* Стили для формы с рамкой */
+.framed-form {
+  border-radius: 8px;
+}
+
+.framed-input {
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  background: white;
+  height: 46px;        /* Фиксированная высота */
+  padding: 4px 10px;   /* Уменьшенные отступы */
+  line-height: 1.2;    /* Плотный межстрочный интервал */
+  box-sizing: border-box;
+}
+
+.framed-input label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.framed-input input {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+.form-row {
+        display:block;
+        gap: 15px; /* Расстояние между элементами */
+    }
+    
+    
+.form-group {
+  display: grid;
+  margin-bottom: 20px;
+}
+
+.framed-input {
+  width: 100%;
+  height: 46px;
+  padding: 0 15px;
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  box-sizing: border-box;
+}
+
+.form-submit {
+  flex: 0 0 auto; /* Фиксированная ширина для кнопки */
+  margin-bottom: 3px; /* Микро-корректировка выравнивания */
+}
+
+.submit-btn {
+  height: 46px; /* Такая же высота как у полей */
+  padding: 0 25px;
+  background-color: #754929;
+  color: white;
+  border: none;
+  border-radius: 14px; /* Такой же радиус скругления */
+  font-size: 16px;
+  cursor: pointer;
+  white-space: nowrap; /* Текст не переносится */
+}
+
+.text-with-image {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: 85%;
+  margin: auto;
+  padding: 20px;
+}
+
+}
+
+/* Малые телефоны (меньше 576px) */
+@media (max-width: 575.98px) {}
+
+
