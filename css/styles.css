@@ -46,10 +46,12 @@ nav{
 }
 
 nav .logo{
-    font-size: 30px;
     font-weight: 600;
     color: #ff660d;
-    letter-spacing: 1px;
+}
+
+.photo_logo{
+  height: 100px;
 }
 
 nav .links a{
@@ -645,6 +647,22 @@ nav .menu-btn {
 
 /* Большие телефоны (меньше 768px) */
 @media (max-width: 768px) { 
+
+  nav{
+    top: 0;
+    left:0;
+    right:0;
+    padding: 2px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .photo_logo{
+    height: 50px;
+  }
+
+
   .chinese-slogan {
     font-size: 18px;
     margin-bottom: 10px;
