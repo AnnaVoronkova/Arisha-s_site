@@ -5,6 +5,13 @@ h1, h2, h3 {
   letter-spacing: 0.5px;
 }
 
+.title1{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: 0;
+}
+
 
 body{
     background-color: #fff5ed;
@@ -12,12 +19,12 @@ body{
 }
 
 header{
-    position: sticky; /* или fixed/sticky если нужно */
-    top:0;
-    left: 0;
-    z-index: 1000; /* гарантирует что навигация поверх других элементов */
-    width: 100%;
-    background-color: #fff5ed;
+  position: sticky; /* или fixed/sticky если нужно */
+  top:0;
+  left: 0;
+  z-index: 1000; /* гарантирует что навигация поверх других элементов */
+  width: 100%;
+  background-color: #fff5ed;
 }
 
 a{
@@ -647,7 +654,7 @@ nav .menu-btn {
 /* Большие телефоны (меньше 768px) */
 @media (max-width: 768px) { 
   nav .menu-btn {
-    font-size: 18px;
+    font-size: 22px;
     cursor: pointer;
 }
 
@@ -655,7 +662,7 @@ nav .menu-btn {
     top: 0;
     left:0;
     right:0;
-    height: 35px;
+    height: 42px;
     padding: 2px 6%;
     display: flex;
     align-items: center;
@@ -663,7 +670,7 @@ nav .menu-btn {
   }
 
   .photo_logo{
-    height: 30px;
+    height: 35px;
   }
 
 
@@ -674,7 +681,7 @@ nav .menu-btn {
     /*font-weight: bold;*/
     margin: 0 auto;
     padding: 10px;
-    padding-top: 30px;
+    padding-top: 80px;
 }
 
 
@@ -727,7 +734,8 @@ nav .menu-btn {
 }
 
 .highlight-box{
-  padding-bottom: 15px;
+  padding-bottom: 10px;
+  font-size: 14px;
 }
 
 /* Стили для формы с рамкой */
