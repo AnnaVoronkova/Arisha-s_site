@@ -253,7 +253,6 @@ nav .menu-btn {
   display: flex;
   align-items: center;
   gap: 40px;
-  max-width: 1200px;
   width: 750px;
   margin: auto;
   padding: 20px;
@@ -780,6 +779,15 @@ nav .menu-btn {
   font-size: 16px;
   cursor: pointer;
   white-space: nowrap; /* Текст не переносится */
+}
+
+.text-with-image {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: 85%;
+  margin: auto;
+  padding: 20px;
 }
 
 }
