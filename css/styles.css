@@ -658,7 +658,7 @@ nav .menu-btn {
   }
 
   .photo_logo{
-    height: 50px;
+    height: 30px;
   }
 
 
@@ -782,10 +782,12 @@ nav .menu-btn {
 }
 
 .text-with-image {
-  display: flex;
+  display: grid; 
+  place-items: center;
+  text-align: center;
   align-items: center;
-  gap: 40px;
-  width: 85%;
+  gap: 20px;
+  width: 90%;
   margin: auto;
   padding: 20px;
 }
