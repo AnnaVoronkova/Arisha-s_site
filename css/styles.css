@@ -646,11 +646,16 @@ nav .menu-btn {
 
 /* Большие телефоны (меньше 768px) */
 @media (max-width: 768px) { 
+  nav .menu-btn {
+    font-size: 18px;
+    cursor: pointer;
+}
 
   nav{
     top: 0;
     left:0;
     right:0;
+    height: 35px;
     padding: 2px 6%;
     display: flex;
     align-items: center;
@@ -660,6 +665,17 @@ nav .menu-btn {
   .photo_logo{
     height: 30px;
   }
+
+
+  .language-school-banner {
+    line-height: 1;
+    position: relative;
+    text-align: center;
+    /*font-weight: bold;*/
+    margin: 0 auto;
+    padding: 10px;
+    padding-top: 30px;
+}
 
 
   .chinese-slogan {
