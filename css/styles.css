@@ -691,6 +691,7 @@ nav .menu-btn {
     position: relative;
     text-align: center;
     /*font-weight: bold;*/
+    width: 70%;
     margin: 0 auto;
     padding: 10px;
     padding-top: 80px;
@@ -793,11 +794,12 @@ nav .menu-btn {
 
 .framed-input {
   width: 100%;
-  height: 46px;
+  height: 40px;
   padding: 0 15px;
   border: 1px solid #ddd;
   border-radius: 14px;
   box-sizing: border-box;
+  text-align: left;
 }
 
 .form-submit {
@@ -806,7 +808,7 @@ nav .menu-btn {
 }
 
 .submit-btn {
-  height: 46px; /* Такая же высота как у полей */
+  height: 40px; /* Такая же высота как у полей */
   padding: 0 25px;
   background-color: #754929;
   color: white;
@@ -829,9 +831,15 @@ nav .menu-btn {
 }
 
 .text-content{
-  font-size: 14px;
+  font-size: 12px;
   text-transform: uppercase;
   color:#754929;
+  width: 80%;
+}
+
+.right-image{
+  height: 200px;
+  padding: 10px;
 }
 
 .photo {
