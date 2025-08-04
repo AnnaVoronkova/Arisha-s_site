@@ -5,6 +5,13 @@ h1, h2, h3 {
   letter-spacing: 0.5px;
 }
 
+.title1{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: 0;
+}
+
 
 body{
     background-color: #fff5ed;
@@ -12,12 +19,12 @@ body{
 }
 
 header{
-    position: sticky; /* или fixed/sticky если нужно */
-    top:0;
-    left: 0;
-    z-index: 1000; /* гарантирует что навигация поверх других элементов */
-    width: 100%;
-    background-color: #fff5ed;
+  position: sticky; /* или fixed/sticky если нужно */
+  top:0;
+  left: 0;
+  z-index: 1000; /* гарантирует что навигация поверх других элементов */
+  width: 100%;
+  background-color: #fff5ed;
 }
 
 a{
@@ -646,11 +653,16 @@ nav .menu-btn {
 
 /* Большие телефоны (меньше 768px) */
 @media (max-width: 768px) { 
+  nav .menu-btn {
+    font-size: 22px;
+    cursor: pointer;
+}
 
   nav{
     top: 0;
     left:0;
     right:0;
+    height: 55px;
     padding: 2px 6%;
     display: flex;
     align-items: center;
@@ -658,8 +670,31 @@ nav .menu-btn {
   }
 
   .photo_logo{
-    height: 30px;
+    height: 50px;
   }
+
+  .btn{
+    background-color: #ff660d;
+    padding: 4px 15px;
+    color: azure;
+    border:none;
+    font-size:14px;
+    font-weight: 400;
+    border-radius: 10px;
+    cursor:pointer;
+    transition:0.5s;
+}
+
+
+  .language-school-banner {
+    line-height: 1;
+    position: relative;
+    text-align: center;
+    /*font-weight: bold;*/
+    margin: 0 auto;
+    padding: 10px;
+    padding-top: 80px;
+}
 
 
   .chinese-slogan {
@@ -704,14 +739,15 @@ nav .menu-btn {
   padding-right: 30px;
   padding-bottom: 20px;
   
-  width: 90%;
+  width: 80%;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   background-color: #ff660d;
 }
 
 .highlight-box{
-  padding-bottom: 15px;
+  padding-bottom: 10px;
+  font-size: 14px;
 }
 
 /* Стили для формы с рамкой */
@@ -790,6 +826,12 @@ nav .menu-btn {
   width: 90%;
   margin: auto;
   padding: 20px;
+}
+
+.text-content{
+  font-size: 14px;
+  text-transform: uppercase;
+  color:#754929;
 }
 
 }
